@@ -5,23 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="https://kit.fontawesome.com/40f7891f93.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header style="width: 100%; height: 470px; background-color: rgb(229, 227, 231);">
+    <header >
         <!-- This is the header of the webpage. Within it is the navbar for navigating the page. -->
-        <img src="pexels-hamann-la-947785 (2).jpg" style="width: 100%;" alt="camera" >
-        <h1 style="color: rgb(43, 43, 43); font-size: 100px; margin-top: -230px; margin-left: 100px; text-align: left; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; ">My Portfolio</h1>
-        <nav class="second" style="width: 100%; height: 50px; text-align: center; margin-top: 118px;">
-                <a href="/portfolioCP.html" style="padding: 20px; font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif;">Home</a>
-                <a href="#About" style="padding: 20px; font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif;">About</a>
-                <a href="#Work" style="padding: 20px; font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif;">Work</a>
-                <a href="#Resume" style="padding: 20px; font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif;">Resume</a>
-                <a href="#Contact" style="padding: 20px; font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif;">Contact</a>
-        </nav>
+        <div id="navbar">
+            <a href="/portfolioCP.html">Home</a>
+            <a href="#About" >About</a>
+            <a href="#Work" >Work</a>
+            <a href="#Resume" >Resume</a>
+            <a href="#Contact" >Contact</a>
+        </div>
+        <img src="pexels-hamann-la-947785 (2).jpg" alt="camera" >
+        <h1 style="color: rgb(43, 43, 43); font-size: 100px; margin-top: -230px; margin-left: 100px; text-align: left;">My Portfolio</h1>
     </header>
-    <main style="width: 100%; height: 1300px; background-color: rgb(255, 255, 255);" >
+    <main class="content" style="width: 100%; height: 1300px; background-color: rgb(255, 255, 255);" >
         <!-- This section contains the major content of the webpage such as the About section, the Work section, the resume section and the contact section. -->
-        <div style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding-left: 20px;">
+        <div class="about" style="padding-left: 20px;">
             <a name="About"></a>
              <h2 style="font-size: 50px;">About</h2>
              <h3 >Meet: Sarah Rivers:</h3>
@@ -31,7 +33,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum neque omnis tenetur nemo reiciendis placeat minima laboriosam inventore vel, repellat vitae aperiam dignissimos error deleniti beatae at velit modi temporibus!</p>
             </span>
         </div>
-        <div style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding-left: 20px;">
+        <div class="work" style="padding-left: 20px;">
             <a name="Work" ></a>
             <div>
                 <h2 style="font-size: 50px;" >Work</h2>
@@ -45,7 +47,7 @@
                 </ul>
                 <h2>Archive:</h2>
             </div>
-            <div class="archive" style="width: 100%; height: 300px; display: flex;">
+            <div class="archive">
                 <div class="img1">
                     <img src="Screenshot_20220630-150748~2.png" style="width: 300px; height: 300px; margin: 5px;">
                 </div>
@@ -60,7 +62,7 @@
                 </div>               
             </div>
         </div>
-        <div style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding-left: 20px;">
+        <div style="padding-left: 20px;">
              <a name="Resume"></a>
              <h2 style="font-size: 50px;">Resume</h2>
              <div>
@@ -98,29 +100,29 @@
         
     </main>
     <footer style="width: 100%; height: 330px; background-color: rgb(255, 183, 94);" >
-        <div style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding-left: 20px;" >
+        <div style="padding-left: 20px;" >
             <a name="Contact"></a>
             <h2 style="font-size: 50px; text-align: left;" >Contact Me</h2>
             <textarea name="message" cols="100" rows="5">I would love to hear from you!</textarea>
             <button style="border-color: rgb(43, 43, 43);">Send</button>
         </div>
         <div>
-            <ul style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+            <ul>
                 <div style="display: flex;">
-                    <svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
-                    <li type="none" style="padding: 5px;">Email: oluwanifemidaramola.62@gmail.com</li>
+                    <i class="fa-sharp fa-solid fa-envelope"></i>
+                    <li type="none" style="padding-left: 5px;">Email: oluwanifemidaramola.62@gmail.com</li>
                 </div>
                 <div style="display: flex;">
-                    <svg style="width: 17px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
-                    <li type="none" style="padding: 5px;">Office address: Somewere on earth</li>
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <li type="none" style="padding-left: 5px;">Office address: Somewere on earth</li>
                 </div>
                 <div style="display: flex;">
-                    <svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
-                    <li type="none" style="padding: 5px;">Facebook: user_name</li>
+                    <i class="fa-brands fa-facebook icon, icon"></i>
+                    <li type="none" style="padding-left: 5px;">Facebook: user_name</li>
                 </div>
                 <div style="display: flex;">
-                    <svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"/></svg>
-                    <li type="none" style="padding: 5px;">Instagram: user_name</li>
+                    <i class="fa-brands fa-instagram icon, icon"></i>
+                    <li type="none" style="padding-left: 5px;">Instagram: user_name</li>
                 </div>
             </ul>
 
